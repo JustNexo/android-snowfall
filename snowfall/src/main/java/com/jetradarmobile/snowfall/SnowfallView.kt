@@ -25,7 +25,7 @@ import android.util.AttributeSet
 import android.view.View
 
 class SnowfallView(context: Context, attrs: AttributeSet) : View(context, attrs) {
-  private val DEFAULT_SNOWFLAKES_NUM = 200
+  val DEFAULT_SNOWFLAKES_NUM = 0
   private val DEFAULT_SNOWFLAKE_ALPHA_MIN = 150
   private val DEFAULT_SNOWFLAKE_ALPHA_MAX = 250
   private val DEFAULT_SNOWFLAKE_ANGLE_MAX = 10
@@ -36,7 +36,7 @@ class SnowfallView(context: Context, attrs: AttributeSet) : View(context, attrs)
   private val DEFAULT_SNOWFLAKES_FADING_ENABLED = false
   private val DEFAULT_SNOWFLAKES_ALREADY_FALLING = false
 
-  private val snowflakesNum: Int
+val snowflakesNum: Int
   private val snowflakeImage: Bitmap?
   private val snowflakeAlphaMin: Int
   private val snowflakeAlphaMax: Int
